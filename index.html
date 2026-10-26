@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tegar Bimo Prakoso Putra Ngabei (Bei)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="#">Tegar Bei</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse mt-5">
+            <div class="col-12 col-md-8 mt-4 mt-md-0">
+                <h3 class="fw-semibold">Hi! I am</h3>
+                <h1 class="fw-bold">Tegar Bimo Prakoso Putra Ngabei (Bei)</h1>
+                <p class="fs-5 mt-3">I am a passionate <strong>Web Developer & Data Scientist</strong> based in Jakarta, Indonesia. I love building intelligent applications, designing robust cloud architectures, and crafting intuitive user interfaces.</p>
+                <!-- Tombol Download Resume -->
+                <a class="btn button mt-3" href="CV_Tegar_Bimo_Prakoso_Putra_Ngabei_(Bei).pdf" download>Download Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <!-- Memanggil foto langsung dari folder yang sama -->
+                <img src="FOTO SENDIRII.jpeg" alt="Potret Tegar Bei">
+            </div>
+        </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark fw-bold">Scroll Down</div>
+            <h2 id="arrow" class="mt-2 text-dark">↓</h2>
+        </a>
+    </section>
+
+    <section id="about" class="about container">
+        <p class="fs-5">Saya adalah lulusan Ilmu Komputer dari UIN Syarif Hidayatullah Jakarta dengan IPK 3.73. Saya memiliki minat besar dalam Web Development dan Data Science, namun saya juga adaptif dan terbiasa mengerjakan berbagai <em>stack</em> teknologi lain, termasuk Android dan Cloud Computing.</p>
+        
+        <div class="about-exp mt-5">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5 class="fw-bold">Data Scientist / Researcher</h5>
+                        <p class="mb-0 text-muted">Undergraduate Thesis (Skripsi)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Menyelesaikan skripsi berjudul "Analisis Sentimen Pengguna Aplikasi Grab dan Gojek Menggunakan Metode Support Vector Machine (SVM)". Berfokus pada Data Science menggunakan Python, ekstraksi fitur dengan TF-IDF, dan stemming bahasa Indonesia menggunakan Sastrawi.</p>
+            </div>
+            
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5 class="fw-bold">Cloud Computing Engineer</h5>
+                        <p class="mb-0 text-muted">Bangkit Academy 2023 - SootheMeApp</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Mengembangkan <strong>SootheMeApp</strong> (aplikasi pereda stres) pada jalur Cloud Computing di Bangkit Academy 2023. Tanggung jawab mencakup perancangan infrastruktur cloud, deployment API, serta integrasi sisi backend ke sistem Android.</p>
+            </div>
+
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5 class="fw-bold">AI Web Developer</h5>
+                        <p class="mb-0 text-muted">Esam Web - Waste Classification</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Mengembangkan <strong>Esam Web</strong>, sistem klasifikasi jenis sampah menggabungkan Convolutional Neural Network (CNN) menggunakan TensorFlow/Keras yang diintegrasikan ke antarmuka web modern menggunakan Next.js.</p>
+            </div>
+
+             <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5 class="fw-bold">Fullstack Web Developer</h5>
+                        <p class="mb-0 text-muted">De Libris & Sporton</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Turut mengembangkan dan merancang antarmuka serta sistem operasional untuk proyek <strong>De Libris</strong> dan <strong>Sporton</strong>. Berfokus pada pengelolaan basis data yang efisien dan UI/UX yang responsif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5 mt-4">
+            <div class="col-12 col-md-5">
+                <h3 class="fw-bold mb-4">My Portfolio</h3>
+                <p>Beberapa cuplikan dari sistem dan aplikasi yang pernah saya kembangkan, mulai dari model AI untuk klasifikasi citra, website responsif, hingga infrastruktur cloud untuk aplikasi mobile.</p>
+                <!-- Memanggil foto langsung dari folder yang sama -->
+                <img src="myself.jpg" alt="Tegar Bei" class="img-fluid rounded mt-3 d-none d-md-block" style="width: 80%;">
+            </div>
+            <div class="col-12 col-md-6 work-img">
+                
+                <!-- 1. Esam Web -->
+                <a href="https://esam-web-neon.vercel.app/" target="_blank" rel="noopener noreferrer" id="work-1" class="work-img-item text-decoration-none">    
+                    <img src="esam web.png" alt="Esam Web UI" onerror="this.onerror=null; this.src='https://placehold.co/300x200?text=Esam+Web'">
+                </a>
+                
+               <!-- 2. De Libris -->
+                <a href="https://github.com/tegarbimop/DE_LIBRIS" target="_blank" rel="noopener noreferrer" id="work-2" class="work-img-item text-decoration-none">
+                    <img src="delibris.png" alt="De Libris UI" onerror="this.onerror=null; this.src='https://placehold.co/300x200?text=De+Libris';">
+                </a>
+                
+                <!-- 3. Sporton (Menggantikan posisi SootheMeApp) -->
+                <a href="https://sporton-fe-vercel-deploy-psi.vercel.app/" target="_blank" rel="noopener noreferrer" id="work-3" class="work-img-item text-decoration-none">    
+                    <img src="sporton.png" alt="Sporton UI" onerror="this.onerror=null; this.src='https://placehold.co/600x200?text=Sporton'">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact container">
+        <div class="row d-flex gap-5 mt-4">
+            <div class="col-12 col-lg-6">
+                <h3 class="fw-bold mb-4">Let's Connect</h3>
+                <p>Punya pertanyaan atau ide kolaborasi? Jangan ragu untuk menghubungi saya melalui form di samping atau melalui kontak di bawah ini.</p>
+                
+                <div class="row mt-5">
+                    <!-- GitHub -->
+                    <div class="col-12 mb-4 d-flex align-items-center">
+                        <img src="github.png" alt="github icon" style="width: 40px; height: 40px; object-fit: contain;">
+                        <p class="mb-0 ms-3 fw-bold fs-5">
+                            <a href="https://github.com/tegarbimop" target="_blank" class="text-dark text-decoration-none">tegarbimop</a>
+                        </p>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="col-12 mb-4 d-flex align-items-center">
+                        <img src="linkedin.png" alt="linkedin icon" style="width: 40px; height: 40px; object-fit: contain;">
+                        <p class="mb-0 ms-3 fw-bold fs-5">
+                            <a href="https://www.linkedin.com/in/tegar-bimo-prakoso-putra-ngabei-bei-5b8603206/" target="_blank" class="text-dark text-decoration-none">Tegar Bimo Prakoso Putra Ngabei (Bei)</a>
+                        </p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-12 mb-4 d-flex align-items-center">
+                        <img src="email.png" alt="email icon" style="width: 40px; height: 40px; object-fit: contain;">
+                        <p class="mb-0 ms-3 fw-bold fs-5">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beigardino@gmail.com" target="_blank" class="text-dark text-decoration-none">beigardino@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-5">
+                <form class="contact-form bg-white shadow-sm" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="inp_message" class="form-label">Message</label>
+                        <textarea class="form-control" id="inp_message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn button px-5 py-2 fw-bold">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
